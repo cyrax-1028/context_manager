@@ -57,7 +57,7 @@ def create_person_table():
                 )
             ''')
             conn.commit()
-    print(Fore.GREEN + "Table created successfully or already created.")
+    print(Fore.GREEN + "Table created successfully.")
 
 create_person_table()
 
@@ -82,11 +82,11 @@ while True:
         else:
             print(Fore.RED + "Person not found.")
     elif choice == '3':
-        name = input("Enter person's name: ")
-        age = int(input("Enter person's age: "))
+        name = input("Enter person name: ")
+        age = int(input("Enter person age: "))
         Person.add_person(name, age)
     elif choice == '4':
-        print(Fore.RED + "Exiting...")
+        print(Fore.RED + "Chiqildi...")
         break
     else:
         print(Fore.RED + "Invalid choice. Please try again.")
